@@ -13,15 +13,15 @@ function closeModal()
 {
     $(".modal").css("display","none")
 }
-window.onclick = function(event) {
+// window.onclick = function(event) {
     
-  //console.log(event.target)
-  console.log($("#myModal"))
-    if ($(event.target).hasClass("modal") ) {
-        $(".modal").css("display","none") 
+//   //console.log(event.target)
+//   console.log($("#myModal"))
+//     if ($(event.target).hasClass("modal") ) {
+//         $(".modal").css("display","none") 
       
-    }
+//     }
     
-  }
+//   }
 
  

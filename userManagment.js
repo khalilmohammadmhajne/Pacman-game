@@ -8,8 +8,8 @@ currentOnline=null
 
 function LoginFormShow()
 {
-
     $(".welcomePage").css("display","none")
+    $(".welcome-message").css("display","none")
     $("#Login").css("display","block");
     $("#Register").css("display","none");
     $(".settings").css("display","none");
@@ -21,6 +21,7 @@ function LoginFormShow()
 function showRegisterForm(){
 
     $(".welcomePage").css("display","none")
+    $(".welcome-message").css("display","none")
     $("#Login").css("display","none");
     $("#Register").css("display","block");
     $(".settings").css("display","none")
@@ -33,6 +34,7 @@ function ShowWelcomePage()
 {
 
     $(".welcomePage").css("display","block")
+    $(".welcome-message").css("display","block")
     $("#Login").css("display","none");
     $("#Register").css("display","none");
     $(".settings").css("display","none");
@@ -43,43 +45,46 @@ function ShowWelcomePage()
 
 function ShowSettings()
 {
+  $("#logoutMenu").css("display","inline")
+  $("#welcomeMenu").css("display","none")
   $(".welcomePage").css("display","none")
-    $("#Login").css("display","none");
-    $("#Register").css("display","none");
-    $(".settings").css("display","block")
-    $(".GameScreen").css("display","none")
-    intro.play()
-    intro.loop = true
+  $("#loginMenu").css("display","none")
+  $("#Login").css("display","none");
+  $("#registerMenu").css("display","none")
+  $("#Register").css("display","none");
+  $(".settings").css("display","block")
+  $(".GameScreen").css("display","none")
+  // intro.play()
+  // intro.loop = true
 }
 
 
 
-function signIn()
+function Login()
 {
-let userName=$("#LoginUsername").val()
-let passWord = $("#LoginPassword").val()
+  ShowSettings();
+  // let userName=$("#LoginUsername").val()
+  // let passWord = $("#LoginPassword").val()
 
-if(userName in Users){    
-  if(Users[userName].localeCompare(passWord) === 0){
+  // if(userName in Users){    
+  //   if(Users[userName].localeCompare(passWord) === 0){
 
-    currentOnline=userName
-    document.getElementById("playerUserName").innerHTML="User: "+userName
-    ShowSettings();
+  //     currentOnline=userName
+  //     document.getElementById("playerUserName").innerHTML="User: "+userName
+  //     ShowSettings();
 
-  }
-  else 
-  {
-    alert("Wrong Password");
-    return 
-  }
-}
-else
-{
-  alert("User Name Doesn't Exists");
-  return 
-}
-
-
+  //   }
+  //   else 
+  //   {
+  //     alert("Wrong Password");
+  //     return 
+  //   }
+  // }
+  // else
+  // {
+  //   alert("User Name Doesn't Exists");
+  //   return 
+  // }
 }
 
 

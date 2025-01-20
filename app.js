@@ -80,8 +80,6 @@ function Start() { //Done
 	
 	clean_the_screan();
 	
-	show_setting();
-	
 	create_the_board();
 	console.log("here")
 	keysDown = {};
@@ -151,32 +149,7 @@ function clean_the_screan(){ //Done
 	
 
 }
-function show_setting(){ /**Done */
-	document.getElementById("game setting").style.display ="block"
-	$(".dir").css("display","inline-block");
-	document.getElementById("hl").style.display ="inline-block"
-	document.getElementById("lives").style.display="inline-block"
-	document.getElementById("U").innerHTML = "Press " + document.getElementById("up").value + " to go up "
-	document.getElementById("D").innerHTML = "Press " + document.getElementById("down").value + " to go down "
-	document.getElementById("R").innerHTML = "Press " + document.getElementById("right").value + " to go right "
-	document.getElementById("L").innerHTML = "Press " + document.getElementById("left").value + " to go left "
-	document.getElementById("B").innerHTML = "Number of balls : " + document.getElementById("balls").value + " "
-	document.getElementById("T").innerHTML = "Time : " + time+ " "
-	document.getElementById("M").innerHTML = "Number of monsters :" + document.getElementById("monsters").value	
-	document.getElementById("hl").innerHTML = "Lives :"
-	let lives = document.getElementById("lives")
-	for ( var i=0; i < 7; i++){
-		if(i<rejection){
-			document.getElementById(i).style.display ="inline-block"
-		}
-		else{
-			document.getElementById(i).style.display ="none"
-		}
-		
-	}
-	
 
-}
 function create_the_board(){ //Done
 	console.log("start")
 	board = new Array();
@@ -290,7 +263,6 @@ function update (){ //Done
 	}
 	Drow(dir);
 	draw_dynamic_point();
-	show_setting();
 	game_status();
 }
 function Update_time(){
