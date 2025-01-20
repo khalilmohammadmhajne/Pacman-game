@@ -1,0 +1,277 @@
+
+body
+{
+  background-repeat: no-repeat;
+    margin: 0;
+    background-image: url("./images/wallpaper.jpg");
+    background-color: rgb(207, 211, 215);
+    background-size: 100% 100%;
+}
+
+.error
+{ 
+
+  font-weight:normal;
+  font-size: 17;
+  color: red;
+}
+.Game
+{
+padding: 0;
+margin: 0;
+}
+
+header
+{
+  
+  background-color: #282829 ;
+}
+.menu {
+   margin-left: 35%;
+   width: 50%;
+ 
+    float: none;
+    overflow: hidden;
+    background-color:  #282829 ;
+  }
+  
+button:hover{
+  background-color: rgb(48, 144, 229);
+}
+
+button
+{
+  background-color:  #595959;
+  color: white;
+   height: 60px;
+   width: 250px;
+ 
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  border-radius:10px;
+  box-shadow: 0 15px 25px rgb(0 0 0 / 34%);
+  border: none;
+
+  letter-spacing: 2px;
+}
+div[id="game setting"]{
+ font-size: 22;
+background-color: rgb(23, 21, 21,0.4);
+float: right;
+
+
+}
+  .menu a {
+   
+    cursor: pointer;
+    float: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 900;
+  }
+  
+  .menu a:hover {
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
+  }
+
+  .welcomePage{
+    background-image: url("./images/wallpaper.jpg");
+
+    height: 89%;
+  }
+
+.settings{
+  margin: 0;
+
+}
+.settingsContainer input
+{
+  color: #ddd;
+  background-color: transparent;
+ border-radius: 10px;
+  font-size: 20;
+text-align: center;
+width: 50%;
+height: 4%;
+margin-left: 25%;
+margin-right: 25%;
+margin-bottom: 1%;
+border-top: none;
+border-left: none;
+border-right: none;
+border-bottom-color:white ;
+border-bottom-width: 2px;
+
+}
+.settingsContainer input:focus
+{
+  color: #1c1c1c;
+background-color: rgb(205, 218, 205);
+}
+.settingsContainer button{
+  width: 25%;
+  height: 7%;
+  background-color: rgb(48, 144, 229);
+}
+.settingsContainer button:hover{
+  background-color: rgb(28, 28, 28,0.3);
+}
+
+.settingsContainer
+{
+  border-radius: 20px;
+  padding-top: 3;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  height: 90%;
+  background-color: rgb(61, 68, 117,0.4);
+
+ 
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  font-size: 20;
+
+
+}
+.GameScreen
+{
+  background-color: #3c4375;
+  height: 89%;
+}
+.Game{
+  background: #3c4375;
+  
+}
+footer
+{
+ 
+color: white;
+height: 6%;
+margin-bottom: 0;
+background-color: #1F2129;
+}
+footer a:link{
+  color: rgb(239, 247, 239);
+  background-color: transparent;
+  text-decoration: none;
+}
+footer a:hover{
+  background-color: #1c1c1c;
+}
+
+#Login
+{
+  
+  text-align: center;
+  height: 89%;
+  background-color: white;
+}
+
+.playAgainClass{
+  width: 50%;
+  text-align: center;
+  margin-left:25% ;
+  margin-right:25% ;
+
+}
+
+.login-box {
+
+  color:rgb(16, 16, 16);
+  font-size: 24;
+  letter-spacing: 3px;
+  padding-top: 12%;
+  height: 100%;
+  background: #3d4475;
+
+  box-sizing: border-box;
+  
+  }
+
+  .signUp-box
+  {
+    color:rgb(250, 247, 247);
+    font-size: 24;
+    letter-spacing: 3px;
+    padding-top: 5%;
+    height: 100%;
+    background: #3c4375;
+    font-weight: 700;
+    box-sizing: border-box;
+ 
+  }
+#SignInButton
+{
+  margin-top: 10;
+width:350px;
+height: 50px;
+font-size: 30;
+font-weight: 800;
+background-color: #1F2129;
+
+}
+#SignInButton:hover{
+
+cursor: pointer;
+background-color: rgb(48, 144, 229);
+}
+.user-box {
+  display:block;
+  text-align: center;
+}
+.SignInInput
+{
+  border-radius: 10px;
+  height: 40px;
+  width: 220px;
+  background-color: rgb(249, 249, 245);
+  border-top: none;
+  border-left: none;
+  border-right:none;
+  border-bottom-color: rgb(19, 19, 19);
+  border-bottom-width: 3px;
+  
+}
+
+#Register
+{
+  color: white;
+  text-align: center;
+  height: 89%;
+  background-color: white;
+}
+
+#SignUp{
+  width: 350;
+  margin-top: 10px;
+  background-color: #1F2129;
+}
+#SignUp:hover{
+cursor: pointer;
+  background-color: rgb(48, 144, 229);
+
+}
+#date
+{
+  width: 200px;
+}
+.SignUpInput
+
+{  border-radius: 10px;
+  height: 40px;
+  width: 220px;
+  background-color: rgb(249, 249, 245);
+  border-top: none;
+  border-left: none;
+  border-right:none;
+  border-bottom-color: rgb(19, 19, 19);
+  border-bottom-width: 3px;
+  position: static;
+}
+
